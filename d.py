@@ -112,7 +112,7 @@ async def main():
     blxd = Blxd()
     
     print(f"{R}────────────────────────────────────────────────────────")
-    print(f"{W}1: Single Token | 2: Multi-Token (Manual) | 3: Login")
+    print(f"{W}1: Single Token | 2: Multi-Token | 3: Login")
     mode = input(f"{R}> {W}").strip()
 
     connector = aiohttp.TCPConnector(use_dns_cache=True, ttl_dns_cache=300)
@@ -181,3 +181,4 @@ async def main():
 if __name__ == "__main__":
     try: asyncio.run(main())
     except KeyboardInterrupt: sys.exit()
+
